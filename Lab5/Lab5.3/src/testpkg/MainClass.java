@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+
 import static java.util.stream.Collectors.toList;
 
 
@@ -54,11 +55,14 @@ public class MainClass {
         //------------------------------------------------------------
         System.out.println("\n  ---Task3: ");
         List<Integer> capital = countryList.stream().map(Country::getCapital).collect(toList());
-        String c = "";
-        for (Integer integer : capital) {
-            c = cityList.stream().filter(city -> city.getId() == integer).max(Comparator.comparingInt(City::getPopulation)).toString();
+        List<City> c = new ArrayList<>();
+        for (Integer ii:capital)
+        {
+            Optional<City> c1=cityList.stream().filter(city ->city.getId()==ii).max(Comparator.comparingInt(City::getPopulation));
+            c1.ifPresent(c::add);
         }
-        System.out.println(c);
+        String heigestCapital= c.stream().max(Comparator.comparingInt(City::getPopulation)).toString();
+        System.out.println(heigestCapital);
     }
 
 }
