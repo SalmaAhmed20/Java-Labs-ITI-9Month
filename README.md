@@ -14,5 +14,9 @@ Tasks I made in ITI 9-month scholarship
  <h3>Lab5:</h3>- Lamda Expression
       <br>- Stream API
  
- <h3>Lab6:</h3>- Collections     
+ <h3>Lab6:</h3>- Collections    
+ <h3>Lab7:</h3>- GUI and Threads 
+          <br> - Date Second by Second
+          <br> - Marquee
+          <br> - Bouncing Ball
    
