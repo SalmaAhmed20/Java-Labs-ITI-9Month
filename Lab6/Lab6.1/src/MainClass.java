@@ -7,7 +7,7 @@ public class MainClass {
         d1.addSorted('a',"America");
         d1.addSorted('b',"Book");
         d1.addSorted('b',"Banana");
-        d1.printAll();
+        //d1.printAll();
         d1.addSorted('d',"Desk");
         d1.addSorted('d',"Duck");
         d1.addSorted('c',"Car");
