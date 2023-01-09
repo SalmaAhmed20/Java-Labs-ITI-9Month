@@ -15,8 +15,7 @@ public class MainClass {
         shapes.add(new Circle());
         shapes.add(new Rectangle());
         shapes.add(new Circle());
-        Test t=new Test();
-        t.testDraw(shapes);
+        Test.testDraw(shapes);
 
         ArrayList<Rectangle> rectangles= new ArrayList<>(4);
         rectangles.add(new Rectangle());
